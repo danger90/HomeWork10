@@ -1,0 +1,26 @@
+package homeWork10;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Cat cat1 = new Cat("Fish", "Red", 1, "Barsik");
+		System.out.println(cat1);
+	    cat1.eat();
+	    cat1.sleep();
+	    cat1.getVoice();
+	    
+		Dog dog1 = new Dog("Meet", "Black", 5, "Totoshka");
+		System.out.println(dog1);
+	    dog1.eat();
+	    dog1.sleep();
+	    dog1.getVoice();
+		
+		Veterinarian veterinarian1 = new Veterinarian("Sjoma");
+	    System.out.println(veterinarian1);
+	    veterinarian1.treatment(cat1);
+	    veterinarian1.treatment(dog1);
+	}
+
+}
